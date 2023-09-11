@@ -4,6 +4,6 @@ A javascript project based on [Etch-a-sketch](https://en.wikipedia.org/wiki/Etch
 ### How It Works
 It used 16x16 grid layout, and wherever you hover over a pixel it gets colored(black). Reset button reset the grids, basically erasing all the changes.
 
-link to the website:
+[website-link](https://akanksha493.github.io/etch-a-sketch/) 
 
 ![screenshot](./images/screenshot.png)
