@@ -10,11 +10,29 @@
 <body>
 
     <main>
+        <select name="grid-layout" id="layout-choice">
+            <option value="16">16x16</option>
+            <option value="32">32x32</option>
+            <option value="100">100x100</option>
+        </select>
         
+        <button class="bttn" id="color-pen">
+            <span class="bttn-title">Color Pen</span>
+            <input type="color" id="color-selector">
+        </button>
+        <button class="bttn" id="shading-pen">
+            <span class="bttn-title">Shading Pen</span>
+        </button>
+        <button class="bttn" id="pen">
+            Pen
+        </button>
+        <button class="bttn" id="eraser">Eraser</button>
         <div class="grid-container">
             <!-- <div class="grid"></div> -->
         </div>
-        <button class="reset">Reset</button>
+        <button class="bttn" id="reset">
+            Reset
+        </button>
     </main>
 
 
