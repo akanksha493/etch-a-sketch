@@ -3,36 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="style.css">
     <title>Etch-a-Sketch</title>
 </head>
 <body>
 
     <main>
-        <select name="grid-layout" id="layout-choice">
-            <option value="16">16x16</option>
-            <option value="32">32x32</option>
-            <option value="100">100x100</option>
-        </select>
-        
-        <button class="bttn" id="color-pen">
-            <span class="bttn-title">Color Pen</span>
-            <input type="color" id="color-selector">
-        </button>
-        <button class="bttn" id="shading-pen">
-            <span class="bttn-title">Shading Pen</span>
-        </button>
-        <button class="bttn" id="pen">
-            Pen
-        </button>
-        <button class="bttn" id="eraser">Eraser</button>
-        <div class="grid-container">
-            <!-- <div class="grid"></div> -->
+        <div id="bttn-container">
+            <div id="color-selector-container">
+                <span>Choose your color:</span>
+                <input type="color" id="color-selector">
+            </div>
+            <button class="bttn" id="shading-pen">
+                <span class="bttn-title">Shading Pen</span>
+            </button>
+            <button class="bttn" id="color-pen">
+                <span class="bttn-title">Color Pen</span>
+            </button>
+            <button class="bttn" id="black-pen">
+                <span class="bttn-title">Black Pen</span>
+            </button>
+            <button class="bttn" id="eraser">
+                <span class="bttn-title">Eraser</span>
+            </button>
+            <button class="bttn" id="reset">
+                <span class="bttn-title">Reset</span>
+            </button>
         </div>
-        <button class="bttn" id="reset">
-            Reset
-        </button>
+
+        <div id="essentials-container">
+            
+            <div class="grid-layout-container">
+                <span>Change Grid Layout:</span>
+                <select name="grid-layout" id="layout-choice">
+                    <option value="16">16x16</option>
+                    <option value="32">32x32</option>
+                    <option value="100">100x100</option>
+                </select>
+            </div>
+            <div class="grid-container">
+                <!-- <div class="grid"></div> -->
+            </div>
+        </div>
     </main>
 
 
